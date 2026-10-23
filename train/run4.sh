@@ -1,0 +1,11 @@
+CUDA_VISIBLE_DEVICES=2 python run4.py\
+    model="/data/FR/FRYOLO/train/yolo11/yolo11-2-4-C3k2_WT-4D-7202326-VCM-6828-C3k2_ECA-19XSSwoRGB.yaml"\
+    data="/data/FR/FRYOLO/ultralytics/cfg/datasets/AI-TOD.yaml"\
+    pretrained="False"\
+    epoch=800 \
+    batch=8\
+    workers=2\
+    device="2"\
+    optimizer="SGD"\
+    name="test"\
+    amp="True"
